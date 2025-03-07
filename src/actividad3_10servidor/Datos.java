@@ -17,7 +17,7 @@ public class Datos implements Serializable {
     boolean gana;
 
     // Si el juego está activo o no
-    boolean juega;
+    boolean juega = true;
 
     public Datos(String cadena, int intentos, int identificador) {
         this.cadena = cadena;

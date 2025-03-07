@@ -53,6 +53,7 @@ public class HiloServidorAdivina extends Thread {
 
                 Datos d = (Datos) fentrada.readObject();
                 numecli = Integer.parseInt(d.getCadena());
+                System.out.println("Cliente " + identificador + " ha dicho: " + numecli);
 
                 String cad = objeto.nuevaJugada(identificador, numecli);
                 intentos++;
